@@ -66,7 +66,7 @@ class Minter(Help):
             else:
                 return self.privatekey, 'error'
 
-        self.w3 = Web3(Web3.HTTPProvider(rpcs[chain]))
+        self.w3 = Web3(Web3.HTTPProvider(rpcs[self.chain]))
         self.account = self.w3.eth.account.from_key(self.privatekey)
         self.address = self.account.address
         while True:
