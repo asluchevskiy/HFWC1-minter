@@ -39,7 +39,7 @@ class Minter(Help):
         self.chain = chain if chain else ''
         self.drop_address = Web3.to_checksum_address('0x6D6768A0b24299bEdE0492A4571D79F535c330D8')
         self.mode = mode
-        self.count = random.choice(count) if type(count) == list else count
+        self.count = random.randint(count[0], count[1]) if type(count) == list else count
         self.w3 = ''
         self.delay = random.randint(delay[0], delay[1])
         self.account = ''
