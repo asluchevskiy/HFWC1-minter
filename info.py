@@ -6,7 +6,7 @@ scans = {'bsc': 'https://bscscan.com/tx/',
 balances = {'avax': 0.01,
             'bsc': 0.001,
             'polygon': 0.1,
-            'opti': 0.00005}
+            'opti': 0.000025}
 
 holograph_ids = {'polygon': 4,
                  'avax': 3,

@@ -214,7 +214,7 @@ class Bridger(Help):
             if data:
                 nft_id = data
             else:
-                return self.address, 'BLDG nft not in wallet'
+                return self.address, 'HFWC1 nft not in wallet'
 
         elif self.mode == 1:
             self.w3 = Web3(Web3.HTTPProvider(rpcs['bsc']))
