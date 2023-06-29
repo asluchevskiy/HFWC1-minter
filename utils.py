@@ -10,9 +10,10 @@ import time
 from info import abi, scans, balances, gas_holo, lzEndpointABI, holo_abi, holograph_ids, Lz_ids
 from config import rpcs
 
+
 class Help:
     def check_status_tx(self, tx_hash):
-        logger.info(f'{self.address} - жду подтверждения транзакции  {scans[self.chain]}{self.w3.to_hex(tx_hash)}...')
+        logger.info(f'{self.address} - жду подтверждения транзакции  {scans[self.chain]}tx/{self.w3.to_hex(tx_hash)}...')
 
         start_time = int(time.time())
         while True:
@@ -126,7 +127,8 @@ class Bridger(Help):
         if self.mode == 0 and self.chain != 'opti':
             cc = {'avax': 'avalanche',
                   'polygon': 'polygon',
-                  'bsc': 'bsc'}
+                  'bsc': 'bsc',
+                  'arbitrum': 'arbitrum'}
             api_key = self.moralisapi
             params = {
                 "chain": cc[self.chain],
