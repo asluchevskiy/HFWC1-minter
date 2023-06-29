@@ -46,7 +46,7 @@ class Minter(Help):
         self.address = ''
 
     def balance(self):
-        chainss = ['avax', 'polygon', 'bsc', 'opti']
+        chainss = ['avax', 'polygon', 'bsc', 'opti', 'arbitrum']
         random.shuffle(chainss)
         for i in chainss:
             w3 = Web3(Web3.HTTPProvider(rpcs[i]))

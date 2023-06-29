@@ -19,8 +19,7 @@ rpcs - Небольшая рекомендация для тех кто буде
 
 """
 
-
-count = 1  # [от, до]
+count = (2, 5)  # [от, до]
 
 MODE = ''  # bridger, minter
 
@@ -28,8 +27,7 @@ minter_mode = 1  # 0 - your chain
 
 bridger_mode = 1  # 0 - your chain
 
-
-# bsc, avax, polygon, opti
+# bsc, avax, polygon, opti, arbitrum
 
 chain = ''
 
@@ -37,12 +35,14 @@ to_chain = ''  # ['your chain', 'your chain'...] #бридж только в bsc
 
 shuffle = 1
 
-delay = (0, 100)
+delay = (30, 90)
 
 moralis_api = ''
 
-rpcs = {'bsc': 'https://bscrpc.com',
-        'polygon': 'https://rpc.ankr.com/polygon',
-        'avax': 'https://rpc.ankr.com/avalanche',
-        'opti': 'https://rpc.ankr.com/optimism',
-        }
+rpcs = {
+    'bsc': 'https://bscrpc.com',
+    'polygon': 'https://rpc.ankr.com/polygon',
+    'avax': 'https://rpc.ankr.com/avalanche',
+    'opti': 'https://rpc.ankr.com/optimism',
+    'arbitrum': 'https://rpc.ankr.com/arbitrum',
+}
